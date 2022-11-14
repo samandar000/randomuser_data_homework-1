@@ -10,6 +10,5 @@ def get_email(data:dict) -> list:
         list: users email
     """
     answer = []
-    for i in data['results']:
-        answer.append('email')
+    for i in data['results']:answer.append(i['email'])
     return answer
