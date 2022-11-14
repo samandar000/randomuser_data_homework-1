@@ -9,3 +9,6 @@ def get_data(filename:str) -> dict:
     Returns:
         dict: JSON data
     """
+    data = open('randomuser_data.json').read()
+    data = json.loads(data)
+    return  data
